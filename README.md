@@ -1,8 +1,4 @@
 # TriSpectraKAN
-Enhanced COPD detection via novel framework called KAN (Kolmogorov Arnold Network)
-
-
-# TriSpectraKAN
 
 **Enhanced COPD detection via a novel framework: the Kolmogorov–Arnold Network (KAN)**
 
@@ -14,8 +10,8 @@ TriSpectraKAN is a hybrid machine learning framework designed to diagnose Chroni
 
 **Key highlights**:
 - Utilizes multi-modal audio features extracted from lung sound recordings.
-- Achieves high performance: ~93% accuracy, ~97% precision, recall, and ~98% F1-score for COPD detection. :contentReference[oaicite:0]{index=0}
-- Deployed successfully on Raspberry Pi, demonstrating real-time, low-resource feasibility. :contentReference[oaicite:1]{index=1}
+- Achieves high performance: ~93% accuracy, ~97% precision, recall, and ~98% F1-score for COPD detection. ([Nature Scientific Reports](https://www.nature.com/articles/s41598-024-82781-1))
+- Deployed successfully on Raspberry Pi, demonstrating real-time, low-resource feasibility.
 
 ---
 
@@ -24,6 +20,7 @@ TriSpectraKAN is a hybrid machine learning framework designed to diagnose Chroni
 If you use this code, please cite:
 
 
+Roy, A., Gyanchandani, B., Oza, A. et al. TriSpectraKAN: a novel approach for COPD detection via lung sound analysis. Sci Rep 15, 6296 (2025). https://doi.org/10.1038/s41598-024-82781-1
 
 ---
 
@@ -47,8 +44,7 @@ The GitHub repo includes the following notebooks:
   - Addresses class imbalance and extracts feature representations: MFCC, Chromagram, and Mel Spectrograms.
 - `part-3-modelling-training.ipynb`  
   - Constructs the TriSpectraKAN model with KAN fusion architecture and CNN heads; includes model training using collected datasets.
-- `copd-kan2 (1).ipynb`  
-  - Likely an experimental or updated version of the KAN model—potentially refines architecture or hyperparameters.
+
 
 ---
 
@@ -60,9 +56,3 @@ The GitHub repo includes the following notebooks:
   - `numpy`, `librosa`, `torch` (PyTorch)
   - ML utilities: e.g., `scikit-learn`, `matplotlib`
   - Jupyter Notebook environment
-
-### Setup & Usage
-1. **Clone the repo**:  
-   ```bash
-   git clone https://github.com/Gyani-Bhavesh/TriSpectraKAN.git
-   cd TriSpectraKAN
